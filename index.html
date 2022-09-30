@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>¡Armamos tu Paquete Disney!</title>
+</head>
+<body>
+ 
+ <h1>Cotizamos y armamos tu viaje a los parques de Walt Disney World a tu gusto!</h1>
+  
+ <div id="personalizado">
+    <p>Hola Amigos! ¿Preparados para la aventura?</p>
+ </div>
+
+ <form id="formularioCotizacion">
+   <label for="" class="col-sm-2 col-form-label">Nombre y Apellido</label>
+   <input type="text" id="Nombre Ingresado">
+   <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+   <input type="text" id="CorreoIngresado">
+   <label for="" class="col-sm-2 col-form-label">Cantidad de Personas</label>
+   <input type="number">
+   <input type="submit" value="Enviar">
+ </form>
+
+ 
+     
+ <div id="tipoDePaquete">
+     <div class="form-check">
+       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+       <label class="form-check-label" for="flexRadioDefault1">Solo Hotel</label>
+     </div>
+     <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">Solo Tickets</label>
+     </div>
+     <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">Hotel y Tickets</label>
+     </div>
+ </div>
+       
+ <!-- <div> AGREGAR UN CALENDARIO CON SELECCION DE FECHAS / cantidad de dias</div> -->
+
+ <div id="tipoDeTickets"  >
+     <div class="form-check">
+         <label for="">Elije el tipo de Tickets</label>
+         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+         <label class="form-check-label" for="flexRadioDefault1">Un parque por día</label>
+    </div>
+    <div class="form-check">
+       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+       <label class="form-check-label" for="flexRadioDefault2">Dos parques por día</label>
+    </div>
+ </div>
+
+ <div id="agregado">
+    <div class="form-check">
+      <label for="">¿Quieres agregar algo más a tu paquete?</label>
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+       <label class="form-check-label" for="flexCheckDefault">Plan de Comidas</label>
+    </div>
+    <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+       <label class="form-check-label" for="flexCheckChecked">Tour Vip</label>
+    </div>
+    <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+       <label class="form-check-label" for="flexCheckChecked">Memory Maker</label>
+    </div>
+    <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+       <label class="form-check-label" for="flexCheckChecked">Nada más!</label>
+    </div>
+ </div> 
+  <button class="btn btnPrincipal"> ¡Quiero cotizar! </button> 
+ 
+
+ <div>
+   <h2>Mira la lista de Hoteles disponibles acá!</h2>
+   <ul id="hoteles" class="list-group">
+   </ul>
+</div>
+
+<div>
+   <h3> Si tenes más dudas sobre tu viaje podé comunicarte con nosotras llenando este formulario</h3> 
+   <div id="formularioConsulta" class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
+      <input type="name" class="form-control" id="nombre" placeholder="Escribe Tu nombre aquí">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="correo" placeholder="Escribe Tu correo electronico aquí">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <input type="submit" value="Enviar">
+    </div>
+</div>
+
+
+ <script src="main.js"></script> 
+</body>
+</html>
